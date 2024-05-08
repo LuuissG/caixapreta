@@ -1,0 +1,270 @@
+{
+  "id": "e81a0a21-bb63-4c81-807a-8d9bb147bd79",
+  "version": "2.0",
+  "name": "RiotGames",
+  "url": "https://authenticate.riotgames.com/?client_id=prod-xsso-riotgames&code_challenge=3NOzvv2nJ8kUWzt_6iSu-Uo96_Ylz389gvzrOgJS978&locale=pt_BR&method=riot_identity_signup&platform=web&redirect_uri=https%3A%2F%2Fauth.riotgames.com%2Fauthorize%3Fclient_id%3Dprod-xsso-riotgames%26code_challenge%3D3NOzvv2nJ8kUWzt_6iSu-Uo96_Ylz389gvzrOgJS978%26code_challenge_method%3DS256%26prompt%3Dsignup%26redirect_uri%3Dhttps%253A%252F%252Fxsso.riotgames.com%252Fredirect%26response_type%3Dcode%26scope%3Dopenid%2520account%2520email%26state%3Dde4527297ac8e67979da0df8a0%26ui_locales%3Dpt-BR",
+  "tests": [{
+    "id": "23a0ee86-3078-4e5d-a4c1-dba13e2b10a8",
+    "name": "Login Incorreto",
+    "commands": [{
+      "id": "66a89760-644b-42b1-97cb-6c0a88d5a79b",
+      "comment": "",
+      "command": "open",
+      "target": "https://authenticate.riotgames.com/?client_id=prod-xsso-riotgames&code_challenge=BpT_HunlWB85COezYk3J4V7jlwrwZt3cRe3AYnh2U74&method=riot_identity&platform=web&redirect_uri=https%3A%2F%2Fauth.riotgames.com%2Fauthorize%3Fclient_id%3Dprod-xsso-riotgames%26code_challenge%3DBpT_HunlWB85COezYk3J4V7jlwrwZt3cRe3AYnh2U74%26code_challenge_method%3DS256%26redirect_uri%3Dhttps%253A%252F%252Fxsso.riotgames.com%252Fredirect%26response_type%3Dcode%26scope%3Dopenid%2520account%2520email%26state%3D9284c20cada4731688a54a210f&security_profile=low",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "078b7f1c-4949-405a-8cdf-a766eeca9ea7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1456x876",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b6365e17-819b-4109-bc48-64c79fdb7f94",
+      "comment": "",
+      "command": "click",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.hZyTAS input", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div/form/div/div/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f90b8bfc-ab94-4ec0-b68b-9c014632dd2d",
+      "comment": "",
+      "command": "type",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.jRMYDv input", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div/form/div/div/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Luuiss"
+    }, {
+      "id": "4d489bc4-eeb5-4681-b720-e58f0a0e2411",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.sc-vjKnw input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div/form/div/div/div/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "dhsdgasydasd"
+    }, {
+      "id": "9c70ec1e-1dcb-44bd-bb8e-23d0805f9993",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.sc-vjKnw input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div/form/div/div/div/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }]
+  }, {
+    "id": "ad349c27-25ee-43a5-9e9d-1ec427cd6325",
+    "name": "Login correto",
+    "commands": [{
+      "id": "53f1fbc9-6160-4750-b08b-c754af8da7f2",
+      "comment": "",
+      "command": "open",
+      "target": "https://authenticate.riotgames.com/?client_id=prod-xsso-riotgames&code_challenge=BpT_HunlWB85COezYk3J4V7jlwrwZt3cRe3AYnh2U74&method=riot_identity&platform=web&redirect_uri=https%3A%2F%2Fauth.riotgames.com%2Fauthorize%3Fclient_id%3Dprod-xsso-riotgames%26code_challenge%3DBpT_HunlWB85COezYk3J4V7jlwrwZt3cRe3AYnh2U74%26code_challenge_method%3DS256%26redirect_uri%3Dhttps%253A%252F%252Fxsso.riotgames.com%252Fredirect%26response_type%3Dcode%26scope%3Dopenid%2520account%2520email%26state%3D9284c20cada4731688a54a210f&security_profile=low",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "68cb4c90-f364-4e0c-93da-291d85fd8fe4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1456x876",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "54e8219f-9987-4364-9328-e25273dab353",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sc-vjKnw > .sc-ktEKTO",
+      "targets": [
+        ["css=.sc-vjKnw > .sc-ktEKTO", "css:finder"],
+        ["xpath=//div[@id='root']/div/main/div/form/div/div/div/div[3]/div", "xpath:idRelative"],
+        ["xpath=//div/div/div[3]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1d550b17-9c03-4f72-86f0-e900a606cf6b",
+      "comment": "",
+      "command": "click",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.hZyTAS input", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div/form/div/div/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ffa53062-07f1-47cb-ba8c-b5bb29203e6b",
+      "comment": "",
+      "command": "type",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.jRMYDv input", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div/form/div/div/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "LuuissGR"
+    }, {
+      "id": "b8d29444-7481-4a0f-8ad5-74e281f4def4",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.sc-vjKnw input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div/form/div/div/div/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "fkllkf13579!"
+    }, {
+      "id": "cf9db3ed-a94a-4293-b835-feaec25012f3",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.sc-vjKnw input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/main/div/form/div/div/div/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }]
+  }, {
+    "id": "20874142-eadc-42b1-9748-e8653307c1d8",
+    "name": "Trocar de idioma",
+    "commands": [{
+      "id": "c9167153-1b98-4e37-993c-8d7145e5aa3f",
+      "comment": "",
+      "command": "open",
+      "target": "https://authenticate.riotgames.com/?client_id=prod-xsso-riotgames&code_challenge=3NOzvv2nJ8kUWzt_6iSu-Uo96_Ylz389gvzrOgJS978&locale=pt_BR&method=riot_identity_signup&platform=web&redirect_uri=https%3A%2F%2Fauth.riotgames.com%2Fauthorize%3Fclient_id%3Dprod-xsso-riotgames%26code_challenge%3D3NOzvv2nJ8kUWzt_6iSu-Uo96_Ylz389gvzrOgJS978%26code_challenge_method%3DS256%26prompt%3Dsignup%26redirect_uri%3Dhttps%253A%252F%252Fxsso.riotgames.com%252Fredirect%26response_type%3Dcode%26scope%3Dopenid%2520account%2520email%26state%3Dde4527297ac8e67979da0df8a0%26ui_locales%3Dpt-BR",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a7409c72-6b43-4ef6-95f5-76bf424a6d96",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1216x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9dc1b41b-0086-4bc6-9152-f4b0bc905ee1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sc-hIqOWS",
+      "targets": [
+        ["css=.sc-hIqOWS", "css:finder"],
+        ["xpath=//div[@id='root']/div/footer/div/span[5]/span/span/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8fd5f4c5-96ac-4af9-a2a1-d57a5fdfee21",
+      "comment": "",
+      "command": "select",
+      "target": "css=.sc-hIqOWS",
+      "targets": [],
+      "value": "label=Polski"
+    }, {
+      "id": "0df4a8dc-def3-4280-a67a-ae1c09e4991e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sc-hIqOWS",
+      "targets": [
+        ["css=.sc-hIqOWS", "css:finder"],
+        ["xpath=//div[@id='root']/div/footer/div/span[5]/span/span/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bdc14a20-681f-4bc3-8adb-6b8e07c6afa5",
+      "comment": "",
+      "command": "select",
+      "target": "css=.sc-hIqOWS",
+      "targets": [],
+      "value": "label=한국어"
+    }]
+  }, {
+    "id": "7946532e-ffcd-44ab-8436-29bca5a4f94f",
+    "name": "Suporte",
+    "commands": [{
+      "id": "5a2313d6-139d-4dc7-bed2-02f2d8c32fc3",
+      "comment": "",
+      "command": "open",
+      "target": "https://authenticate.riotgames.com/?client_id=prod-xsso-riotgames&code_challenge=3NOzvv2nJ8kUWzt_6iSu-Uo96_Ylz389gvzrOgJS978&locale=pt_BR&method=riot_identity_signup&platform=web&redirect_uri=https%3A%2F%2Fauth.riotgames.com%2Fauthorize%3Fclient_id%3Dprod-xsso-riotgames%26code_challenge%3D3NOzvv2nJ8kUWzt_6iSu-Uo96_Ylz389gvzrOgJS978%26code_challenge_method%3DS256%26prompt%3Dsignup%26redirect_uri%3Dhttps%253A%252F%252Fxsso.riotgames.com%252Fredirect%26response_type%3Dcode%26scope%3Dopenid%2520account%2520email%26state%3Dde4527297ac8e67979da0df8a0%26ui_locales%3Dpt-BR",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "10bd842c-b7ad-4f29-888d-fa258896f617",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1216x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7693fd9a-942a-4693-9ae6-3b4c78dcb47c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.eIokoZ:nth-child(1) > .sc-qRumB",
+      "targets": [
+        ["css=.eIokoZ:nth-child(1) > .sc-qRumB", "css:finder"],
+        ["xpath=//a[contains(text(),'Suporte')]", "xpath:link"],
+        ["xpath=//div[@id='root']/div/footer/div/span/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://support.riotgames.com/hc/pt-br')]", "xpath:href"],
+        ["xpath=//footer/div/span/a", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win2096",
+      "windowTimeout": 2000
+    }, {
+      "id": "593a8f45-f519-4b60-8974-bd3339f0fe3f",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win2096}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "de59bef1-c6f6-4310-82d0-64225da61daf",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,828)",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "896cbd11-2317-4b9a-a22e-6b168ddfe633",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://authenticate.riotgames.com/", "https://authenticate.riotgames.com/?client_id=prod-xsso-riotgames&code_challenge=3NOzvv2nJ8kUWzt_6iSu-Uo96_Ylz389gvzrOgJS978&locale=pt_BR&method=riot_identity_signup&platform=web&redirect_uri=https%3A%2F%2Fauth.riotgames.com%2Fauthorize%3Fclient_id%3Dprod-xsso-riotgames%26code_challenge%3D3NOzvv2nJ8kUWzt_6iSu-Uo96_Ylz389gvzrOgJS978%26code_challenge_method%3DS256%26prompt%3Dsignup%26redirect_uri%3Dhttps%253A%252F%252Fxsso.riotgames.com%252Fredirect%26response_type%3Dcode%26scope%3Dopenid%2520account%2520email%26state%3Dde4527297ac8e67979da0df8a0%26ui_locales%3Dpt-BR"],
+  "plugins": []
+}
